@@ -1,0 +1,70 @@
+<html><head><title>[q]OSM Stats Ukraine: Tags</title><meta http-equiv=Content-Type content="text/html; charset=UTF-8" /><script src="/stat/sorttable.js"></script></head><body>
+<script type="text/javascript">
+var d = document;
+var offsetfromcursorY=15 // y offset of tooltip
+var ie=d.all && !window.opera;
+var ns6=d.getElementById && !d.all;
+var tipobj,op=0;
+      var left,top=0;
+function tt(el,txt) { if (d.getElementById('mess').style.visibility=='hidden'){	tipobj=d.getElementById('mess');
+	e = el;	tipobj.innerHTML = '<div style="float:right;align:right;cursor:pointer;cursor:hand;border-bottom:1px solid grey;padding:2px;border-left:1px solid black;" onclick="hide_info(this)">x</div>'+ txt;	el.onmousemove=positiontip;};}
+
+function hide_info(el) {op=0;tipobj.style.opacity = op; d.getElementById('mess').style.visibility='hidden';}
+
+function ietruebody(){return (d.compatMode && d.compatMode!="BackCompat")? d.documentElement : d.body}
+
+function positiontip(e) { if (d.getElementById('mess').style.visibility=='hidden'){
+	var curX=(ns6)?e.pageX : event.clientX+ietruebody().scrollLeft;
+	var curY=(ns6)?e.pageY : event.clientY+ietruebody().scrollTop;
+	var winwidth=ie? ietruebody().clientWidth : window.innerWidth-20
+	var winheight=ie? ietruebody().clientHeight : window.innerHeight-20
+	var rightedge=ie? winwidth-event.clientX : winwidth-e.clientX;
+	var bottomedge=ie? winheight-event.clientY-offsetfromcursorY : winheight-e.clientY-offsetfromcursorY;
+ol = left;
+ot = top;
+      left=0;top=0;
+	if (rightedge < tipobj.offsetWidth)	left=curX-tipobj.offsetWidth;
+	else left=curX;
+	if (bottomedge < tipobj.offsetHeight) top=curY-tipobj.offsetHeight-offsetfromcursorY
+	else top=curY+offsetfromcursorY;
+if (left <= 0){left = 0;};
+if (top <= 0){top = 0;};
+if ( ((ol-left)*(ol-left)+(ot-top)*(ot-top)) >400){
+tipobj.style.left = left;
+tipobj.style.top = top;
+}
+else{ol=left;ot=top;}
+};}
+function ap(el) {el.onmousemove='';op=tipobj.style.opacity;if (op==0){	op = 1;	tipobj.style.opacity = op; tipobj.style.visibility="visible";};
+if(op < 1) {op += 0.1;	tipobj.style.opacity = op;tipobj.style.filter = 'alpha(opacity='+op*100+')';t = setTimeout('appear()', 30);};}</script>
+
+<style>span{cursor:pointer;cursor:hand;} span:hover{color:navy}</style>
+</head><body><div id="mess" style="visibility: hidden; position:absolute; background-color:white; border:1px dotted red; width:400px; height: 350px; overflow:auto "></div><table class="sortable" style="width: 100%; border: 1px solid gray" border=1 width=100%>
+<tr><td>k<td>num<td>v's<tr><td>quantity<td>20<td><span onmouseover="tt(this,' Ways: <a href=http://openstreetmap.org/browse/way/216863100>216863100</a> <a href=http://openstreetmap.org/browse/way/216863106>216863106</a> <a href=http://openstreetmap.org/browse/way/216863114>216863114</a> <a href=http://openstreetmap.org/browse/way/220769091>220769091</a> <a href=http://openstreetmap.org/browse/way/262943219>262943219</a> <a href=http://openstreetmap.org/browse/way/262943224>262943224</a> <a href=http://openstreetmap.org/browse/way/262943229>262943229</a> <a href=http://openstreetmap.org/browse/way/262943236>262943236</a> <a href=http://openstreetmap.org/browse/way/262943246>262943246</a> <a href=http://openstreetmap.org/browse/way/262943248>262943248</a> <a href=http://openstreetmap.org/browse/way/262943259>262943259</a> <a href=http://openstreetmap.org/browse/way/262943260>262943260</a> <a href=http://openstreetmap.org/browse/way/262943261>262943261</a> <a href=http://openstreetmap.org/browse/way/268417992>268417992</a> <a href=http://openstreetmap.org/browse/way/268418020>268418020</a> <br><a href=http://openstreetmap.org/user/Kilkenni>Kilkenni</a>: 1 <br><a href=http://openstreetmap.org/user/danvyr>danvyr</a>: 4 <br><a href=http://openstreetmap.org/user/kr12>kr12</a>: 8 <br><a href=http://openstreetmap.org/user/andygol>andygol</a>: 1 <br><a href=http://openstreetmap.org/user/muninnn>muninnn</a>: 1 <br>')" onclick="ap(this)">2 (15)</span>, <span onmouseover="tt(this,' Ways: <a href=http://openstreetmap.org/browse/way/231622923>231622923</a> <br><a href=http://openstreetmap.org/user/Movses>Movses</a>: 1 <br>')" onclick="ap(this)">5 (1)</span>, <span onmouseover="tt(this,' Ways: <a href=http://openstreetmap.org/browse/way/178217232>178217232</a> <a href=http://openstreetmap.org/browse/way/187495308>187495308</a> <a href=http://openstreetmap.org/browse/way/230894094>230894094</a> <a href=http://openstreetmap.org/browse/way/284222128>284222128</a> <br><a href=http://openstreetmap.org/user/avinet_ua>avinet_ua</a>: 1 <br><a href=http://openstreetmap.org/user/Movses>Movses</a>: 3 <br>')" onclick="ap(this)">6 (4)</span>, <tr><td>quarry<td>7<td><span onmouseover="tt(this,' Ways: <a href=http://openstreetmap.org/browse/way/307471940>307471940</a> <a href=http://openstreetmap.org/browse/way/382365567>382365567</a> <br><a href=http://openstreetmap.org/user/Vel2Os>Vel2Os</a>: 1 <br><a href=http://openstreetmap.org/user/Alex-7>Alex-7</a>: 1 <br>')" onclick="ap(this)">gravel_pit (2)</span>, <span onmouseover="tt(this,' Ways: <a href=http://openstreetmap.org/browse/way/382516047>382516047</a> <br>Relations: <a href=http://openstreetmap.org/browse/relation/9751084>9751084</a> <br><a href=http://openstreetmap.org/user/Skifes>Skifes</a>: 1 <br><a href=http://openstreetmap.org/user/nikiforov>nikiforov</a>: 1 <br>')" onclick="ap(this)">sand (2)</span>, <span onmouseover="tt(this,' Ways: <a href=http://openstreetmap.org/browse/way/129021546>129021546</a> <a href=http://openstreetmap.org/browse/way/129021571>129021571</a> <a href=http://openstreetmap.org/browse/way/778306218>778306218</a> <br><a href=http://openstreetmap.org/user/Vel2Os>Vel2Os</a>: 3 <br>')" onclick="ap(this)">sand_pit (3)</span>, <tr><td>quarry:type<td>1<td><span onmouseover="tt(this,' <br>Relations: <a href=http://openstreetmap.org/browse/relation/12715978>12715978</a> <br><a href=http://openstreetmap.org/user/mike140>mike140</a>: 1 <br>')" onclick="ap(this)">peat_cutting (1)</span>, </table>
+<a href=tags-other.html> other </a>| 
+<a href=tags-a.html> a </a>| 
+<a href=tags-b.html> b </a>| 
+<a href=tags-c.html> c </a>| 
+<a href=tags-d.html> d </a>| 
+<a href=tags-e.html> e </a>| 
+<a href=tags-f.html> f </a>| 
+<a href=tags-g.html> g </a>| 
+<a href=tags-h.html> h </a>| 
+<a href=tags-i.html> i </a>| 
+<a href=tags-j.html> j </a>| 
+<a href=tags-k.html> k </a>| 
+<a href=tags-l.html> l </a>| 
+<a href=tags-m.html> m </a>| 
+<a href=tags-n.html> n </a>| 
+<a href=tags-o.html> o </a>| 
+<a href=tags-p.html> p </a>| 
+<a href=tags-q.html> q </a>| 
+<a href=tags-r.html> r </a>| 
+<a href=tags-s.html> s </a>| 
+<a href=tags-t.html> t </a>| 
+<a href=tags-u.html> u </a>| 
+<a href=tags-v.html> v </a>| 
+<a href=tags-w.html> w </a>| 
+<a href=tags-x.html> x </a>| 
+<a href=tags-y.html> y </a>| 
+<a href=tags-z.html> z </a>| </body></html>
